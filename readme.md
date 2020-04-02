@@ -1,6 +1,10 @@
 # Projektna naloga
 
-
+## Avtorji
+* Matej Gržinič
+* Matej Lavrenčič
+* Metod Zupančič
+* Denis Popović
 
 ## Predstavitev vseh iger glede na kategorijo, izdajalce, uspešnost in trenutno igranost
 <img src="laurencicSlike\categories.png" alt="gameByCategory" width="769"/>
