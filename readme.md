@@ -6,7 +6,19 @@
 * Metod Zupančič
 * Denis Popović
 
-## Predstavitev vseh iger glede na kategorijo, izdajalce, uspešnost in trenutno igranost
+## Podatki
+* steam.csv - Glavni podatki igre
+* steam_description_data.csv - Opis igre
+* steam_media_data.csv - slike igre
+* steam_requirements_data.csv - minimalne in priporočljive strojne zahteve naprave glede na operacijski sistem
+* steam_support_info.csv - povezave za pomoč uporabnikom igre
+* steamspy_tag_data.csv - Lastnostne oznake igre
+
+</br>
+
+## Uvod [---TODO?---]
+
+## Predstavitev vseh iger glede na kategorijo, razvijalce, uspešnost in trenutno igranost
 
 ### Kategorije
 <img src="laurencicSlike\categories.png" alt="gameByCategory" width="769"/>
@@ -30,13 +42,15 @@ Graf prikazuje izdajalce (10), ki imajo največ iger.
 9) "*Warface*"
 10) "*Grand Theft Auto V*"
 
- Prikazane igre (10), so tiste, ki imajo največjo uspešnost. Za izračunat uspešnost ene igre sem, najprej pridobil vrednost pozitivnih ocen v odstodkih (glede na skupne ocene) in nato delil z lastinki igre. Tiste igre, ki so imele najmanjšo izračunano vredost so tiske, ki imajo večjo uspešnost.
+ Prikazane igre (10), so tiste, ki imajo največjo uspešnost. Za izračunat uspešnost ene igre sem najprej pridobil vrednost pozitivnih ocen v odstodkih (glede na skupne ocene) in nato delil z lastniki igre. Manjša je izračunana vrednost, večja je uspešnost igre.
 
 ### Trenutno igranost  
 <img src="laurencicSlike\playtime.png" alt="gameByPlaytime" width="769"/>
 
-Graf prikazuje igre (10), ki imajo največji "median_playtime", podatek s katerim preverimo katere igre imajo najvišjo igranost.
+Graf prikazuje igre (10), ki imajo največji "median_playtime" podatek, s katerim preverimo, katere igre imajo najvišjo igranost.
 
+</br>
+</br>
 
 ## Predstavitev žanrov
 
@@ -51,12 +65,16 @@ Prvi 3 najboljši žanri iger so: "*Indie*", "*Action*", "*Casual*"</br>
 Prvi 3 najboljši žanri iger so: "*Indie*", "*Action*", "*Adventure*"</br>
 Glede na levi graf pa je razvidno manjša razlika med prvima dvema žanroma, kar pove, da je dober delež "*Indie*" iger nepopularen vsaj iz lastnosti števila nakupov igre.
 
+</br>
 
 <img src="zupancicSlike\best50_byOwner.png" alt="" width="769"/>
 
-Graf prikazuje porazdelitev 50 najboljših iger (iz vidika največjega števila nakupov igre)<br>
-Prvi 3 najboljši žanri izbranih so: "*Action*", "*Free to play*", "*Indie*"</br>
+Graf prikazuje porazdelitev 50 najboljših iger (iz vidika največjega števila nakupov igre)
+</br>
+Prvi 3 najboljši žanri izbranih so: "*Action*", "*Free to play*", "*Indie*"
 
+</br>
+</br>
 
 ## Povezava med ceno igre in razmerjem dobrih in slabih ocen
 
@@ -64,16 +82,21 @@ Prvi 3 najboljši žanri izbranih so: "*Action*", "*Free to play*", "*Indie*"</b
 
 Na grafu lahko na x osi vidimo ceno iger in na y osi razmerje ocen izračunano po formuli positive / (positive + negative). Že iz grafa lahko odčitamo, da dražja kot je igra bolj verjetno je, da bodo igralci imeli pozitivno mnenje. Na grafu je dodana tudi premica, ki prikazuje kako so podatki razdeljeni. 
 
+</br>
+</br>
+
 ## Najbolj popularni razvijalci
-<br>
+
+
 Najbolj popularni razvijalci so tisti, ki imajo največje število privržencev (število prodanih kopij vseh njihovih iger). Tukaj ne potrebujemo pregledovati popularnosti vsake igre, saj se v igričarski industriji velikokrat zgodi, da razvijalci izdajo dobro ali slabo igro. Važno je, da jih ljudje poznajo oz., da posedujejo njihovo igro. 
-<br><br>
+</br></br>
 
 <img src="popovicSlike\plt2.png" alt="" width="769"/>
-
+</br>
+</br>
 <img src="popovicSlike\plt3.png" alt="" width="769"/>
 
-Iz zgornjih grafov lahko presodimo, da popularnost razvijalca ni odvisna od števila izdanih iger in ali je igra brezplačna, ali plačljiva. Npr.: "*PUBG Corporation*" in "*Smartly Dressed Games*" imata izdano samo po eno igro, pri tem da je prva plačljiva, druga pa ne, a sta oba razvijalca še vedno v zgornjih 10 po lestvici. <br>
+Iz zgornjih grafov lahko presodimo, da popularnost razvijalca ni odvisna od števila izdanih iger in ali je igra brezplačna, ali plačljiva. Npr.: "*PUBG Corporation*" in "*Smartly Dressed Games*" imata izdano samo po eno igro, pri tem da je prva plačljiva, druga pa ne, a sta oba razvijalca še vedno v zgornjih 10 po lestvici. </br>
 
 "*Feral Interactive*" pa v številu iger zelo odstopa od drugih razvijalcev zato, ker sodeluje z drugimi razvijalci na različnih platformah npr.:("*Linux*", "*MacOs*", "*iOS*", "*Android*"). Posledično je v podatkih zato tako veliko število izdanih iger.
 
