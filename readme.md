@@ -14,9 +14,15 @@
 * steam_support_info.csv - povezave za pomoč uporabnikom igre
 * steamspy_tag_data.csv - Lastnostne oznake igre
 
-</br>
 
-## Uvod [---TODO?---]
+## Uvod 
+
+Zanima nas katere igre so najboljše ali najpopularnejše in kateri razvijalci, žanri in tipi iger prevladujejo v (trenutno) najbolj popularni spletni trgovini "*Steam*". Kaj se je obdržalo skozi čas in kaj ne, kakšni so trendi in kako je s cenami iger. Poiskati želimo najbolj pomembne lastnosti uspešnosti iger.
+   
+Podatke smo dobili na spletni strani kaggle (https://www.kaggle.com/nikdavis/steam-store-games).
+
+</br>
+</br>
 
 ## Predstavitev vseh iger glede na kategorijo, razvijalce, uspešnost in trenutno igranost
 
