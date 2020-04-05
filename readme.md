@@ -1,4 +1,4 @@
-# Projektna naloga
+# Igre spletne trgovine Steam
 
 ## Avtorji
 * Matej Gržinič
