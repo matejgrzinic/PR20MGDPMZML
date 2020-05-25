@@ -27,6 +27,7 @@ Podatke smo dobili na spletni strani kaggle (https://www.kaggle.com/nikdavis/ste
 ## Predstavitev vseh iger glede na kategorijo, razvijalce, uspešnost in trenutno igranost
 
 ### Kategorije
+
 <img src="laurencicSlike\categories.png" alt="gameByCategory" width="769"/>
 
 Graf prikazuje vse kategorije in koliko iger jim pripada. 
@@ -118,3 +119,11 @@ Kot vidimo iz slike je korelacija med atributi zelo slaba. Večje korelacije so 
 
 
 
+## Podatki skozi čas
+
+<img src="popovicSlike\plt5_earlyAccesThroughTime.png" alt="" width="769"/><br>
+<img src="popovicSlike\plt6_indieThroughTime.png" alt="" width="769"/><br>
+<img src="popovicSlike\plt7_freeThroughTime.png" alt="" width="769"/><br>
+
+Za izris grafov skozi čas smo vzeli najbolj značilne vplivne žanre ali lastnosti.<br>
+Indie in Early Access sta dosegla najvišje rasti, brezplačne igre pa so količinsko velik delež celotne baze.
