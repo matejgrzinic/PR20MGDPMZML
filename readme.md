@@ -21,12 +21,13 @@ Zanima nas katere igre so najboljše ali najpopularnejše in kateri razvijalci, 
    
 Podatke smo dobili na spletni strani kaggle (https://www.kaggle.com/nikdavis/steam-store-games).
 
-</br>
-</br>
+<br>
+<br>
 
 ## Predstavitev vseh iger glede na kategorijo, razvijalce, uspešnost in trenutno igranost
 
 ### Kategorije
+
 <img src="laurencicSlike\categories.png" alt="gameByCategory" width="769"/>
 
 Graf prikazuje vse kategorije in koliko iger jim pripada. 
@@ -55,32 +56,32 @@ Graf prikazuje izdajalce (10), ki imajo največ iger.
 
 Graf prikazuje igre (10), ki imajo največji "median_playtime" podatek, s katerim preverimo, katere igre imajo najvišjo igranost.
 
-</br>
-</br>
+<br>
+<br>
 
 ## Predstavitev žanrov
 
 <img src="zupancicSlike\general_genres.png" alt="" width="769"/>
 
-**Levi graf** prikazuje histogram žanrov iger nefiltriranih podatkov.</br>
-Prvi 3 najboljši žanri iger so: "*Indie*", "*Action*", "*Casual*"</br>
+**Levi graf** prikazuje histogram žanrov iger nefiltriranih podatkov.<br>
+Prvi 3 najboljši žanri iger so: "*Indie*", "*Action*", "*Casual*"<br>
 
 
 
-**Desni graf** prikazuje histogram žanrov iger, katerih lastništvo je bilo večje od razpona 0-20000.</br>
-Prvi 3 najboljši žanri iger so: "*Indie*", "*Action*", "*Adventure*"</br>
+**Desni graf** prikazuje histogram žanrov iger, katerih lastništvo je bilo večje od razpona 0-20000.<br>
+Prvi 3 najboljši žanri iger so: "*Indie*", "*Action*", "*Adventure*"<br>
 Glede na levi graf pa je razvidno manjša razlika med prvima dvema žanroma, kar pove, da je dober delež "*Indie*" iger nepopularen vsaj iz lastnosti števila nakupov igre.
 
-</br>
+<br>
 
 <img src="zupancicSlike\best50_byOwner.png" alt="" width="769"/>
 
 Graf prikazuje porazdelitev 50 najboljših iger (iz vidika največjega števila nakupov igre)
-</br>
+<br>
 Prvi 3 najboljši žanri izbranih so: "*Action*", "*Free to play*", "*Indie*"
 
-</br>
-</br>
+<br>
+<br>
 
 ## Povezava med ceno igre in razmerjem dobrih in slabih ocen
 
@@ -88,23 +89,41 @@ Prvi 3 najboljši žanri izbranih so: "*Action*", "*Free to play*", "*Indie*"
 
 Na grafu lahko na x osi vidimo ceno iger in na y osi razmerje ocen izračunano po formuli positive / (positive + negative). Že iz grafa lahko odčitamo, da dražja kot je igra bolj verjetno je, da bodo igralci imeli pozitivno mnenje. Na grafu je dodana tudi premica, ki prikazuje kako so podatki razdeljeni. 
 
-</br>
-</br>
+<br>
+<br>
 
 ## Najbolj popularni razvijalci
 
 
 Najbolj popularni razvijalci so tisti, ki imajo največje število privržencev (število prodanih kopij vseh njihovih iger). Tukaj ne potrebujemo pregledovati popularnosti vsake igre, saj se v igričarski industriji velikokrat zgodi, da razvijalci izdajo dobro ali slabo igro. Važno je, da jih ljudje poznajo oz., da posedujejo njihovo igro. 
-</br></br>
+<br><br>
 
 <img src="popovicSlike\plt2.png" alt="" width="769"/>
-</br>
-</br>
+<br>
+<br>
 <img src="popovicSlike\plt3.png" alt="" width="769"/>
 
-Iz zgornjih grafov lahko presodimo, da popularnost razvijalca ni odvisna od števila izdanih iger in ali je igra brezplačna, ali plačljiva. Npr.: "*PUBG Corporation*" in "*Smartly Dressed Games*" imata izdano samo po eno igro, pri tem da je prva plačljiva, druga pa ne, a sta oba razvijalca še vedno v zgornjih 10 po lestvici. </br>
+Iz zgornjih grafov lahko presodimo, da popularnost razvijalca ni odvisna od števila izdanih iger in ali je igra brezplačna, ali plačljiva. Npr.: "*PUBG Corporation*" in "*Smartly Dressed Games*" imata izdano samo po eno igro, pri tem da je prva plačljiva, druga pa ne, a sta oba razvijalca še vedno v zgornjih 10 po lestvici. <br>
 
 "*Feral Interactive*" pa v številu iger zelo odstopa od drugih razvijalcev zato, ker sodeluje z drugimi razvijalci na različnih platformah npr.:("*Linux*", "*MacOs*", "*iOS*", "*Android*"). Posledično je v podatkih zato tako veliko število izdanih iger.
 
 
 Glede na popularnost je razvijalec "*Valve*" v ogromni prednosti pred drugimi. Podatkovna baza pripada "*Steam*" spletni trgovini, ki pa pripada razvijalcu "*Valve*". Obstajajo tudi druge spletne trgovine, ki so (do sedaj) vse manjše, zato popularnost razvijalca kljub morebitni pristranskosti podatkov ni zgrešena.
+
+
+## Korelacija
+
+<img src="popovicSlike\plt4_corr.png" alt="" width="769"/>
+
+Kot vidimo iz slike je korelacija med atributi zelo slaba. Večje korelacije so med avg_playtime - median_playtime in developer - publisher, kar je smisleno. Atributa Owners (št. prodanih kopij) in reviews (št. kritik) sta tudi v močni korelaciji, saj z večjim številom ljudi, ki je kupilo igrico raste tudi število kritik.
+
+
+
+## Podatki skozi čas
+
+<img src="popovicSlike\plt5_earlyAccesThroughTime.png" alt="" width="769"/><br>
+<img src="popovicSlike\plt6_indieThroughTime.png" alt="" width="769"/><br>
+<img src="popovicSlike\plt7_freeThroughTime.png" alt="" width="769"/><br>
+
+Za izris grafov skozi čas smo vzeli najbolj značilne vplivne žanre ali lastnosti.<br>
+Indie in Early Access sta dosegla najvišje rasti, brezplačne igre pa so količinsko velik delež celotne baze.
