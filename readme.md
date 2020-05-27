@@ -117,6 +117,55 @@ Glede na popularnost je razvijalec "*Valve*" v ogromni prednosti pred drugimi. P
 
 Kot vidimo iz slike je korelacija med atributi zelo slaba. Večje korelacije so med avg_playtime - median_playtime in developer - publisher, kar je smisleno. Atributa Owners (št. prodanih kopij) in reviews (št. kritik) sta tudi v močni korelaciji, saj z večjim številom ljudi, ki je kupilo igrico raste tudi število kritik.
 
+## Napovedovanje števila igralcev
+
+Za X množico smo pustili le atribute ["average_playtime", "median_playtime", "price", "achievements", "positive_ratings", "negative_ratings", "required_age", "english"]
+
+| Razpon števila igralcev  | količina |
+|-------------|:-------------|
+|0-20000| 18596|
+ |20000-50000| 3059|
+ |50000-100000| 1695|
+ |100000-200000| 1386|
+ |200000-500000| 1272|
+ |500000-1000000| 513|
+ |1000000-2000000| 288|
+ |2000000-5000000| 193|
+ |5000000-10000000| 46|
+ |10000000-20000000| 21|
+ |20000000-50000000| 3|
+ |50000000-100000000| 2|
+ |100000000-200000000| 1
+
+**Celotna podatkovna baza** 
+
+| Model  | točnost | povprečna absolutna napaka |
+|-------------| :-------------: | :-------------: |
+| večinski  | 0.688  | 117628  |
+| GaussianNB  | 0.683  | 190052 |
+| DecisionTreeClassifier | 0.699 | 136991 |
+| KNeighborsClassifier (k = 3) | 0.688 | 109479 |
+| KNeighborsClassifier (k = 5) | 0.698 | 105057 | 
+| KNeighborsClassifier (k = 7) | 0.708 | 98506 |
+| svm |0.707 | 109438 | 
+
+<br>
+
+**Brez upoštevanja iger z manj kot 20000 igralci**
+
+<br>
+
+| Model  | točnost | povprečna absolutna napaka |
+|-------------| :-------------: | :-------------: |
+| večinski  | 0.337  | 463691  |
+| GaussianNB  | 0.314  | 482595 |
+| DecisionTreeClassifier | 0.369 | 388465 |
+| KNeighborsClassifier (k = 3) | 0.372 | 326908 |
+| KNeighborsClassifier (k = 5) | 0.386 | 319793 | 
+| KNeighborsClassifier (k = 7) | 0.391 | 296162 |
+| svm |0.384 | 407363 |
+
+Glede na dobljene rezultate sklepamo, da je napovedovanje že zaradi slabih korelacij prejšnje analize med atributi ni efektivno s povprečno točnostjo napovedovanja različnih modelov okoli 70%. Ob filtriranju le bolj relevantnih podatkov točnost upade na povprečno 30% natančnost, ker ima največji delež iger manj kot 20000 igralcev.
 
 
 ## Podatki skozi čas
@@ -126,4 +175,13 @@ Kot vidimo iz slike je korelacija med atributi zelo slaba. Večje korelacije so 
 <img src="popovicSlike\plt7_freeThroughTime.png" alt="" width="769"/><br>
 
 Za izris grafov skozi čas smo vzeli najbolj značilne vplivne žanre ali lastnosti.<br>
-Indie in Early Access sta dosegla najvišje rasti, brezplačne igre pa so količinsko velik delež celotne baze.
+Indie in Early Access sta dosegla najvišje rasti. 
+
+
+## Povprečna cena
+
+<img src="zupancicSlike\pricePerCategory.png" alt="" width="769"/><br>
+
+<img src="zupancicSlike\pricePerGenre.png" alt="" width="769"/><br>
+
+
